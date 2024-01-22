@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hokey's</title>
+    <!--style sheets-->
+    <link rel="stylesheet" href="style.css" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/effb651193.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--daisy and tailwind-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--config-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="manrope">
+    <header class="container mx-auto">
+      <!--navigation-->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-orange-500 active:text-orange-600" href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <a>
+            <h1 class="text-xl md:text-3xl font-extrabold">
+              Hokey<span class="text-orange-500">'</span>s
+            </h1>
+          </a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-2 font-bold lg:text-lg">
+            <li><a class="text-orange-500 active:text-orange-600" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle text-lg pr-5 hidden md:block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a class="btn bg-orange-500 text-white lg:text-lg">Get Ticket</a>
+        </div>
+      </div>
+      <!--carousel-->
+      <div class="mx-2 lg:mx-3">
+        <div class="carousel w-full lg:my-16 my-4 lg:h-[600px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full rounded-3xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/slider2.jpg" class="w-full rounded-3xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/slider3.jpg" class="w-full rounded-3xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./Images/slider4.jpg" class="w-full rounded-3xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <!--Club section-->
+      <section>
+        <!--discription-->
+        <div class="my-3 md:my-10 lg:mx-3">
+          <hr class="border-dashed font-bold lg:mb-5">
+          <h1 class="text-xl lg:text-5xl font-extrabold text-center my-1">Professional Hockeys Club</h1>
+          <p class="text-center mx-4 lg:mx-60 mb-3">Eight international hockey executives will present at the E.H.C.’s Development Seminar “Taking it to the next level” in Gothenburg on 3 January during the IIHF World Junior Championship.</p>
+          <hr class="border-dashed font-bold lg:mt-5">
+          <!--progress bars-->
+          <div class="lg:flex gird grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:m-20 m-6">
+            <div class="text-center mb-6 space-y-1">
+              <div class="radial-progress text-red-400" style="--value:87;" role="progressbar"><span class="text-2xl font-extrabold text-slate-700">87%</span></div>
+              <h4 class="text-xl font-bold">Prayer Facility</h4>
+              <p>We allow all religious prayers <br>everyone has to be tollerent and kind to others </p>
+            </div>
+            <div class="text-center mb-6 space-y-1">
+              <div class="radial-progress text-green-400" style="--value:85;" role="progressbar"><span class="text-2xl font-extrabold text-slate-700">85%</div>
+              <h4 class="text-xl font-bold">Prayer Facility</h4>
+              <p>We allow all religious prayers <br>everyone has to be tollerent and kind to others </p>
+            </div>
+            <div class="text-center mb-6 space-y-1">
+              <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar"><span class="text-2xl font-extrabold text-slate-700">90%</div>
+              <h4 class="text-xl font-bold">Prayer Facility</h4>
+              <p>We allow all religious prayers <br>everyone has to be tollerent and kind to others </p>
+            </div>
+            <div class="text-center mb-6 space-y-1">
+              <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar"><span class="text-2xl font-extrabold text-slate-700">80%</div>
+              <h4 class="text-xl font-bold">Prayer Facility</h4>
+              <p>We allow all religious prayers <br>everyone has to be tollerent and kind to others </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--program section-->
+      <section class="mx-5">
+        <!--discription-->
+        <div class="my-3 md:my-10 lg:mx-3">
+          <hr class="border-dashed font-bold lg:mb-5">
+          <h1 class="text-xl lg:text-5xl font-extrabold text-center my-1">Program Section</h1>
+          <p class="text-center mx-4 lg:mx-60 mb-3">Although developing players for the NHL is not the primary objective of a European hockey organization,<br>it has become an accepted fact that the most talented Europeans are drafted and eventually signed by NHL clubs.</p>
+          <hr class="border-dashed font-bold lg:mt-5">
+        </div>
+        <div class="lg:flex grid lg:grid-cols-2 gap-5 lg:mt-10 mt-5">
+          <div class="card bg-base-100 shadow-lg image-full lg:w-1/2">
+            <figure><img class="w-full" src="./Images/2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="text-white lg:p-5 space-y-5 mt-auto">
+                <h2 class="text-2xl font-extrabold">Junior Program</h2>
+                <p>This level provides the base of the pyramid and has the majority of participants. This stage includes young people who are taught PE.</p>
+                <button class="btn bg-orange-500 border-none text-white text-lg">Register Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl image-full lg:w-1/2">
+            <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="text-white lg:p-5 space-y-5 mt-auto">
+                <h2 class="text-2xl font-extrabold">Teenager Program</h2>
+                <p>This stage is when performers are interested in developing their sporting ability and begin to concentrate on sport specific skills.</p>
+                <button class="btn bg-orange-500 border-none text-white text-lg">Register Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="grid lg:grid-cols-1 mt-5">
+          <div class="card bg-base-100 shadow-lg image-full">
+            <figure><img class="w-full"src="./Images/4.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="text-white lg:p-5 space-y-5 lg:mt-auto">
+                <h2 class="text-2xl font-extrabold">Professional Program</h2>
+                <p>The excellence stage provides the peak of the pyramid and demonstrates the level where individuals reach sporting excellence.</p>
+                <button class="btn bg-orange-500 border-none text-white text-lg">Register Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Product Section-->
+      <section class="mx-5">
+        <!--discription-->
+        <div class="my-8 md:my-28 lg:mx-3">
+          <hr class="border-dashed font-bold lg:mb-5">
+          <h1 class="text-xl lg:text-5xl font-extrabold text-center my-1">Our New Products</h1>
+          <p class="text-center mx-4 lg:mx-60 mb-3">We are now selling our marches, get our leatest marches</p>
+          <hr class="border-dashed font-bold lg:mt-5">
+        </div>
+        <!--products cards-->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <!--Card1-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/5.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">Varsity Jacket</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Red and Gray jacket</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          <!--Card2-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">World Cup Football</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Football of our club</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          <!--Card3-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">Hokey Cap</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Cap of our club</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          <!--Card4-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">World Cup Jersey</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Jersey of our club</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          <!--Card5-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">Goalkeeper Helmet</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Helmet of our club</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          <!--Card6-->
+          <div class="flex items-center bg-base-100 rounded-2xl border p-2 space-x-2">
+            <figure class="md:px-8 md:py-8">
+              <img class="min-h-fit" src="./Images/10.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="md:space-y-2 md:px-6 md:py-6">
+              <div class="md:space-x-4 text-sm md:text-lg text-slate-500 font-light">
+                <span><i class="fa-solid fa-star md:text-xl text-orange-400"></i> 5.0</span>
+                <span><i class="fa-regular fa-eye"></i> 20</span>
+                <span><i class="fa-regular fa-heart"></i></i> 100</span>
+              </div>
+              <h2 class="md:text-2xl md:font-extrabold">Worldcup Football</h2>
+              <p class="text-slate-500 font-light text-sm lg:text-lg">Football of our club</p>
+              <div class="flex items-center text-sm">
+                <h4 class=" md:text-xl font-extrabold text-orange-500 mr-4">Price: $22.00</h4>
+                <span><i class="fa-solid fa-cart-shopping mr-1"></i> Delivery fee: Free</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
